@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../css/home-adop.css" />
+  <title>Home Adoptante</title>
+</head>
+
+<body>
+  <header>
+    <h1>ADOGCATME</h1>
+    <div class="img-adop"><img src="../asset/logo.png" alt="" /></div>
+  </header>
+  <main>
+    <div class="navegador">
+      <nav class="menu">
+        <ul type="none" class="horizontal">
+          <li><a>Menu</a></li>
+            <ul type="none" class="vertical">
+              <li><a href="home.html">Home</a></li>
+              <li>
+                <a href="login-adop.html">Iniciar Sesion / Registrarse</a>
+              </li>
+            </ul>
+        </ul>
+      </nav>
+    </div>
+    <!--<div class="navegador">
+      <nav>
+        <a href="home.html">Home</a>
+        <a href="login-adop.html">Iniciar Sesion</a>
+        <a href="login-adop.html">Registrarse</a>
+      </nav>
+    </div>-->
+    <div class="form">
+      <h3>Filtros</h3>
+      <form action="">
+        <div class="form-A">
+          <div class="tipo-masc">
+            <label for="tipoMascota">Tipo de mascota</label>
+            <select name="tipoMascota" id="tipoMascota">
+              <option value="perro">Perro/a</option>
+              <option value="gato">Gato/a</option>
+            </select>
+          </div>
+          <div class="raza-masc">
+            <label for="raza">Raza:</label>
+            <input type="text" name="raza" id="race" />
+          </div>
+          <div class="edad-masc">
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="age" />
+          </div>
+        </div>
+        <div class="form-B">
+          <div class="sexo-masc">
+            <label for="sexo">Sexo:</label>
+            <select name="sexo" id="sex">
+              <option value="macho">Macho</option>
+              <option value="hembra">Hembra</option>
+            </select>
+          </div>
+          <div class="tamano-masc">
+            <label for="tamano">Tamano:</label>
+            <select name="tamano" id="tamanho">
+              <option value="pequeno">Pequeño</option>
+              <option value="mediano">Mediano</option>
+              <option value="grande">Grande</option>
+            </select>
+          </div>
+          <div class="castrado-masc">
+            <label for="castrado">Castrado:</label>
+            Si<input type="radio" value="si" name="castrado" id="yes" />
+            No<input type="radio" value="no" name="castrado" id="not" />
+          </div>
+        </div>
+        <div class="form-C">
+          <input type="submit" value="Buscar" />
+        </div>
+      </form>
+    </div>
+    <div class="container">
+      <div class="A">
+        <img src="../asset/gatito.png" alt="foto mascota" class="foto-mascota" />
+      </div>
+      <div class="B">
+        <p>Tipo de mascota:</p>
+        <p>Raza:</p>
+        <p>Edad:</p>
+        <p>Sexo:</p>
+        <p>Peso:</p>
+        <p>Tamaño:</p>
+        <p>¿Esta castrado?</p>
+        <p>Dueño:</p>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
