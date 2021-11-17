@@ -14,10 +14,10 @@
 </head>
 <body>
     <header>
-        <div>
-            <img class="logo" src="../asset/logo.png" alt="">
-        </div>
         <h1 class="titulo">ADOGCATME</h1>     
+        <div class="img-logo">
+            <img src="../asset/logo.png" alt="">
+        </div>
     </header>
 
     <main>
@@ -26,7 +26,12 @@
             <div class="header-perfil">
                 <img class="logo-perfil" src="../asset/foto-perfil.png"/>
                 <h1 class="nombre-perfil"> UserName </h1>
-            </div>
+                <button type="button" class="btn btn-secondary"> 
+                    <nav>
+                        <a href="perfil-dueno-edicion.html"><img src="../asset/gear.png"/></a>
+                    </nav>
+                </button>
+                </div>
             <div class="perfil">
                 
                 <div class="column">
@@ -56,9 +61,21 @@
                     </div>
 
                     <div class="buton">
-                        <button id="volver" class="btn-outline-dark " type="button"> Volver al Inicio </button>
-                        <button id="ver-masc" class="btn-outline-dark" type="button"><a href="solicitudes-dueno.html">Ver Mascotas</a></button>
-                        <button id="registro-masc" class="btn-outline-dark" type="button"><a href="registro-mascota.html">Registrar Mascota</a></button>
+                        <button class="ver-masc" type="button"> 
+                            <nav>
+                                <a href="perfil-masct-admin.html">Ver Mascotas</a>
+                            </nav>
+                        </button>
+                        <button class="ver-solic" type="button">
+                            <nav>
+                                <a href="solicitudes-dueno.html">Ver Solicitudes</a>
+                            </nav>
+                        </button>
+                        <button class="agregar" type="button">
+                            <nav>
+                                <a href="registro-mascota.html">Registrar Mascota</a>
+                            </nav>
+                        </button>
                     </div>
             </div>
         </div>
