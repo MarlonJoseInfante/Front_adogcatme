@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Perfil Dueño</title>
+    <title>Editar Perfil Mascota</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,70 +28,70 @@
                     <h3>Mis datos</h3>
                 </div>
 
-                <div class="foto-masc">
-                    <img src="../asset/deter.png">
-                    <label for="image" id="image-mascota">Cambiar la foto de perfil</label>
-                    <div>
-                        <input type="file" id="image">
-                    </div>
-                </div>
-                
                 <div class="datos-a-editar">
-                    <div class="tipo">
-                        <label for="tipo" class="label">Tipo:</label>
-                        <select id="tipo">
-                            <option value>Perro</option>
-                            <option value>Gato</option>
-                        </select>
-                    </div>
-                    
-                    <div class="raza">
-                        <label for="raza" class="label">Raza:</label>
-                        <input type="text" id="raza">
-                    </div>
-
-                    <div class="edad">
-                        <label for="edad" class="label">Edad:</label>
-                        
-                        <input type="number" id="edad" placeholder="años"> 
-                        <input type="number" id="edad" placeholder="meses">
-                        
-                    </div>
-                    
-                    <div class="peso">
-                        <label for="peso" class="label">Peso:</label>
-                        <input type="number" id="peso" placeholder="kg">
-                    </div>
-                    
-                    <div class="tamano">
-                        <label for="tamano" class="label">Tamaño:</label>
-                        <select id="tamano">
-                            <option value>Pequeño</option>
-                            <option value>Mediano</option>
-                            <option value>Grande</option>
-                        </select>
-                    </div>
-                    
-                    <div class="sexo">
-                        <label for="sexo" class="label">Sexo:</label>
-                        <select id="sexo">
-                            <option value>Macho</option>
-                            <option value>Hembra</option>
-                        </select>
-                    </div>
-                    
-                    <div class="castrado">
-                        <label for="castrado" class="label-castrado">¿Está castrado/a?:</label>
-                        <div class="respuesta-castrado">
-                        Si <input type="radio" value="si" name="castrado" id="si">
-                        No <input type="radio" value="no" name="castrado" id="no">
+                    <form action="edicion">
+                        <div class="foto-masc">
+                            <img src="../asset/newgatito.jpeg">
+                            <label for="image" id="image-mascota">Cambiar la foto de perfil</label>
+                            <input type="file" id="image">
                         </div>
-                    </div>
 
-                    <div class="comentarios">
-                        <label for="comentarios" class="label">Comentarios:</label>
-                        <textarea name="comentario" id="comentarios" cols="30" rows="3"></textarea>
-                    </div>
+                        <div class="tipo">
+                            <label for="tipo" class="label">Tipo:</label>
+                            <select id="tipo">
+                                <option value>Perro</option>
+                                <option value>Gato</option>
+                            </select>
+                        </div>
+                        
+                        <div class="raza">
+                            <label for="raza" class="label">Raza:</label>
+                            <input type="text" id="raza">
+                        </div>
+
+                        <div class="edad">
+                            <label for="edad" class="label">Edad:</label>
+                            <div id="age">
+                            <input type="number" id="edad" placeholder="años"> 
+                            <input type="number" id="edad" placeholder="meses">
+                            </div>
+                        </div>
+                        
+                        <div class="peso">
+                            <label for="peso" class="label">Peso:</label>
+                            <input type="number" id="peso" placeholder="kg">
+                        </div>
+                        
+                        <div class="tamano">
+                            <label for="tamano" class="label">Tamaño:</label>
+                            <select id="tamano">
+                                <option value>Pequeño</option>
+                                <option value>Mediano</option>
+                                <option value>Grande</option>
+                            </select>
+                        </div>
+                        
+                        <div class="sexo">
+                            <label for="sexo" class="label">Sexo:</label>
+                            <select id="sexo">
+                                <option value>Macho</option>
+                                <option value>Hembra</option>
+                            </select>
+                        </div>
+                        
+                        <div class="castrado">
+                            <label for="castrado" class="label">¿Está castrado/a?:</label>
+                            <div id="castrado">
+                            Si <input type="radio" value="si" name="castrado" id="si">
+                            No <input type="radio" value="no" name="castrado" id="no">
+                            </div>
+                        </div>
+
+                        <div class="comentarios">
+                            <label for="comentarios" class="label">Comentarios:</label>
+                            <textarea name="comentario" id="comentarios" cols="30" rows="3"></textarea>
+                        </div>
+                    </form>
                 </div>    
 
                 
