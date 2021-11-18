@@ -189,7 +189,7 @@ form{
     margin-right: 15px;
     width: 40%;
     border-radius: 45px;
-    border: none;
+    border: 1px white solid;
     padding-top: 2%;
     padding-bottom: 2%;
 }
@@ -197,4 +197,9 @@ form{
 .btn-actualizar:hover, .btn-cancelar:hover{
     background-color: #ed9078;
     border: 1px black solid;
+}
+nav a{
+    text-decoration: none!important;
+    font-family:'Poppins', sans-serif!important;
+    color: black!important;
 }
